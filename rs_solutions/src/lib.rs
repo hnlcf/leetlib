@@ -37,6 +37,9 @@ pub use lt_0203::*;
 pub mod lt_0206;
 pub use lt_0206::*;
 
+pub mod lt_0226;
+pub use lt_0226::*;
+
 pub mod lt_0242;
 pub use lt_0242::*;
 
