@@ -4,6 +4,7 @@ pub fn merge_two_lists(
     list1: Option<Box<ListNode>>,
     list2: Option<Box<ListNode>>,
 ) -> Option<Box<ListNode>> {
+    // FIX: recursive version
     let mut l1 = list1;
     let mut l2 = list2;
     let mut res = vec![];
