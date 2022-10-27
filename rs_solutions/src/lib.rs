@@ -61,8 +61,8 @@ pub use lt_0704::*;
 pub mod lt_0707;
 pub use lt_0707::*;
 
-pub mod lt_733;
-pub use lt_733::*;
+pub mod lt_0733;
+pub use lt_0733::*;
 
 pub mod lt_0862;
 pub use lt_0862::*;
