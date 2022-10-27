@@ -3,7 +3,8 @@ use std::rc::Rc;
 
 use crate::lt_tree::TreeNode;
 
-pub fn lowest_common_ancestor(
+/// Recursive version
+pub fn lowest_common_ancestor_v1(
     root: Option<Rc<RefCell<TreeNode>>>,
     p: Option<Rc<RefCell<TreeNode>>>,
     q: Option<Rc<RefCell<TreeNode>>>,
@@ -39,7 +40,8 @@ pub fn lowest_common_ancestor(
     res
 }
 
-pub fn lowest_common_ancestor_2(
+/// Iterative version
+pub fn lowest_common_ancestor_v2(
     root: Option<Rc<RefCell<TreeNode>>>,
     p: Option<Rc<RefCell<TreeNode>>>,
     q: Option<Rc<RefCell<TreeNode>>>,
