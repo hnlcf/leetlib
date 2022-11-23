@@ -54,9 +54,10 @@ mod tests {
         assert_eq!(intersection(vec![4, 9, 5], vec![9, 4, 9, 8, 4]), vec![4, 9]);
 
         assert_eq!(intersection_2(vec![1, 2, 2, 1], vec![2, 2]), vec![2]);
-        assert!(
-            intersection_2(vec![4, 9, 5], vec![9, 4, 9, 8, 4]) == vec![4, 9]
-                || intersection_2(vec![4, 9, 5], vec![9, 4, 9, 8, 4]) == vec![9, 4]
-        );
+
+        // output `[4, 9]` or `[9, 4]` are right.
+        let mut actual = intersection_2(vec![4, 9, 5], vec![9, 4, 9, 8, 4]);
+        actual.sort();
+        assert_eq!(actual, vec![4, 9]);
     }
 }

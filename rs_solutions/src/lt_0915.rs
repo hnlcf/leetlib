@@ -8,14 +8,18 @@ pub fn partition_disjoint(nums: Vec<i32>) -> i32 {
     dp[n - 1].1 = i32::MAX;
     dp[n - 2].1 = nums[n - 1];
 
+    // scan the maximum of left
     for i in 1..n {
         dp[i].0 = cmp::max(nums[i], dp[i - 1].0);
     }
 
+    // scan the minimum of right
     for i in (0..n - 2).rev() {
         dp[i].1 = cmp::min(nums[i + 1], dp[i + 1].1);
     }
 
+    // traverse to find the maximum of left partition smaller than the minimum
+    // of right partition
     let mut i = 0;
     for (left, right) in dp {
         i += 1;
