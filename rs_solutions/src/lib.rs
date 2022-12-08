@@ -106,6 +106,9 @@ pub use lt_0707::*;
 pub mod lt_0733;
 pub use lt_0733::*;
 
+pub mod lt_0796;
+pub use lt_0796::*;
+
 pub mod lt_0862;
 pub use lt_0862::*;
 
